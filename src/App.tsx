@@ -24,6 +24,38 @@ function App() {
 
   return (
     <main className="m-2">
+      <section className="mb-3">
+        <p>example proposals</p>
+        <ul>
+          <li>
+            <a
+              className=" underline text-blue-600"
+              target="_blanc"
+              href="https://www.upwork.com/ab/proposals/1699519990255427585?success"
+            >
+              - React Developer needed to do some fixes
+            </a>
+          </li>
+          <li>
+            <a
+              className=" underline text-blue-600"
+              target="_blanc"
+              href="https://www.upwork.com/ab/proposals/1568144192984461313"
+            >
+              - Create React Components in TypeScript according to XD Design
+            </a>
+          </li>
+          <li>
+            <a
+              className=" underline text-blue-600"
+              target="_blanc"
+              href="https://www.upwork.com/ab/proposals/1678450226320551937"
+            >
+              - Next.js Development for Webapp
+            </a>
+          </li>
+        </ul>
+      </section>
       <section>
         <div>
           <p className=" inline-block">Hi</p>
