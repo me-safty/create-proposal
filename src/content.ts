@@ -46,7 +46,7 @@ export const clientReviews = [
 ] as ClientReview[]
 
 export const intro =
-  "I saw your requirements, and It seems you are looking for a skilled front-end developer in react, typescript, redux, HTML, and CSS to do some fixes and add some features to the project. I believe I have the skills and experience to successfully fix the problems of your project."
+  "I saw your requirements, and It seems you are looking for a skilled ( front-end developer ) in ( react, typescript, redux, HTML, and CSS ) to ( do some fixes and add some features to the project ). I am interested in working on your project and I believe I have the skills and expertise to deliver a high-quality product."
 
 export const github =
   "This is my Github profile link: https://github.com/me-safty"

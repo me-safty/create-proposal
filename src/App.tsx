@@ -67,12 +67,12 @@ function App() {
           />
         </div>
         <textarea
-          className="my-2 border p-1 border-black rounded-md"
+          className="my-2 border p-1 border-black rounded-md w-full"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           id="description"
-          cols={70}
           rows={6}
+          _html
         ></textarea>
       </section>
       <p>
@@ -82,19 +82,17 @@ function App() {
       <Projects links={links} setLinks={setLinks} />
       {github}
       <textarea
-        cols={70}
         rows={5}
         value={brief}
         onChange={(e) => setBrief(e.target.value)}
-        className="p-1 rounded-md border border-black block my-2"
+        className="p-1 rounded-md border border-black block my-2 w-full"
       ></textarea>
       <Reviews reviews={reviews} setReviews={setReviews} />
       <textarea
-        cols={70}
         rows={5}
         value={end}
         onChange={(e) => setEnd(e.target.value)}
-        className="p-1 rounded-md border border-black block my-2"
+        className="p-1 rounded-md border border-black block my-2 w-full"
       ></textarea>
       <Proposal
         name={name}

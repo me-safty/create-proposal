@@ -17,7 +17,7 @@ export default function Proposal({
   end: string
 }) {
   return (
-    <article className="w-[800px]">
+    <article>
       <p className="">Hi {name},</p>
       <br />
       <p>{intro}</p>
