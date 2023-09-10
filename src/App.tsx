@@ -72,7 +72,6 @@ function App() {
           onChange={(e) => setDescription(e.target.value)}
           id="description"
           rows={6}
-          _html
         ></textarea>
       </section>
       <p>
