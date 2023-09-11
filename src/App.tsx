@@ -55,10 +55,11 @@ function App() {
             </a>
           </li>
         </ul>
+	<p className="my-1">can you write a proposal for this freelancing job description</p>
       </section>
       <section>
         <div>
-          <p className=" inline-block">Hi</p>
+          <p className="inline-block">Hi</p>
           <input
             className="w-20 p-1 ml-2 border border-black rounded-md"
             type="text"
