@@ -35,6 +35,7 @@ export default function Proposal({
         <br />
         You can see my previous work samples in my portfolio, and here are my
         projects links:
+        <br />
         {projects
           .filter((p) => p.isChecked)
           .map((p, i) => (
@@ -46,15 +47,16 @@ export default function Proposal({
         <p>{github}</p>
         <p>{whoAmI}</p>
         Here is what my clients are saying about me:
+        <br />
         {reviews
           .filter((p) => p.isChecked)
           .map((p, i) => (
             <Fragment key={p.name}>
-              <p>
-                {i + 1}- "{p.review}" ({p.name}'s feedback').
-              </p>
+              {i + 1}- "{p.review}" ({p.name}'s feedback').
+              <br />
             </Fragment>
           ))}
+        <br />
         <p>{end}</p>
       </section>
     </article>
