@@ -18,6 +18,12 @@ export const portfolioLinks = [
       "This is a youtube clone built with react, typescript, Material UI, and integrated with youtube api v3",
   },
   {
+    link: "https://universe-dawn.com",
+    isChecked: true,
+    description:
+      "This is a landing page built with react, typescript, SASS, Arwes Framework and storybook",
+  },
+  {
     link: "https://me-safty.github.io/personal-portfolio",
     isChecked: true,
     description: "fully responsive personal portfolio built with html, css, js",
