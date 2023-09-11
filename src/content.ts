@@ -9,7 +9,7 @@ export const portfolioLinks = [
     link: "https://safty-blog.vercel.app",
     isChecked: true,
     description:
-      "This is a blog website built with react, typescript, nextjs, tailwind CSS, and sanity",
+      "This is a blog website built with react, typescript, nextjs, nextauth, tailwind CSS, and sanity",
   },
   {
     link: "https://saftytube.netlify.app",
@@ -46,7 +46,7 @@ export const clientReviews = [
 ] as ClientReview[]
 
 export const intro =
-  "I saw your requirements, and It seems you are looking for a skilled ( front-end developer ) in ( react, typescript, redux, HTML, and CSS ) to ( do some fixes and add some features to the project ). I am interested in working on your project and I believe I have the skills and expertise to deliver a high-quality product."
+  "I saw your requirements, and It seems you are looking for a skilled front-end developer in react, typescript, redux, HTML, and CSS to do some fixes and add some features to the project. I am interested in working on your project and I believe I have the skills and expertise to deliver a high-quality product."
 
 export const github =
   "This is my Github profile link: https://github.com/me-safty"
@@ -56,3 +56,8 @@ export const whoAmI =
 
 export const ending =
   "I would love to discuss the project further and address any questions or concerns you may have. I am available for a call or video conference at your convenience. I am eager to learn more about your requirements and how I can contribute to the success of your project. \nI look forward to hearing from you and potentially collaborating on this project."
+
+export const respon = `I'll provide you with a completely responsive website from the largest
+screen size down to 320px "the smallest screen width".`
+
+export const long = "I can complete it in no longer than five days or earlier."

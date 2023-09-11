@@ -9,10 +9,13 @@ import {
   ending,
   github,
   intro,
+  long,
   portfolioLinks,
+  respon,
   whoAmI,
 } from "./content"
 import Proposal from "./Proposal"
+import CheckBox from "./CheckBox"
 
 function App() {
   const [name, setName] = useState<string>("")
@@ -21,9 +24,11 @@ function App() {
   const [end, setEnd] = useState<string>(ending)
   const [links, setLinks] = useState<PortfolioLink[]>(portfolioLinks)
   const [reviews, setReviews] = useState<ClientReview[]>(clientReviews)
+  const [responsive, setIrresponsive] = useState<boolean>(true)
+  const [timeItTake, setTimeItTake] = useState<boolean>(true)
 
   return (
-    <main className="m-2">
+    <main className="m-2 max-w-3xl">
       <section className="mb-3">
         <p>example proposals</p>
         <ul>
@@ -81,13 +86,19 @@ function App() {
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           id="description"
-          rows={6}
+          rows={10}
         ></textarea>
       </section>
       <p>
         I am willing to provide a free, 2-3 hour test task for you to assess my
         abilities before making a hiring decision.
       </p>
+      <CheckBox isChecked={timeItTake} setChecked={setTimeItTake}>
+        <p>{long}</p>
+      </CheckBox>
+      <CheckBox isChecked={responsive} setChecked={setIrresponsive}>
+        <p>{respon}</p>
+      </CheckBox>
       <Projects links={links} setLinks={setLinks} />
       {github}
       <textarea
@@ -105,7 +116,9 @@ function App() {
       ></textarea>
       <Proposal
         name={name}
-        intro={intro}
+        intro={description}
+        timeItTake={timeItTake ? long : ""}
+        responsive={responsive ? respon : ""}
         projects={links}
         whoAmI={brief}
         reviews={reviews}
