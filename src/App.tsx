@@ -55,7 +55,9 @@ function App() {
             </a>
           </li>
         </ul>
-	<p className="my-1">can you write a proposal for this freelancing job description</p>
+	<p className="my-1 text-blue-900 cursor-pointer"
+	   onClick={() => navigator.clipboard.writeText("can you write a proposal for this freelancing job description")}
+	>can you write a proposal for this freelancing job description</p>
       </section>
       <section>
         <div>
