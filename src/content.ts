@@ -9,24 +9,31 @@ export const portfolioLinks = [
     link: "https://safty-blog.vercel.app",
     isChecked: true,
     description:
-      "This is a blog website built with react, typescript, nextjs, nextauth, tailwind CSS, and sanity",
+      "This is a blog website built with React, Typescript, Nextjs, NextAuth, Tailwind CSS, and Sanity",
   },
   {
     link: "https://saftytube.netlify.app",
     isChecked: true,
     description:
-      "This is a youtube clone built with react, typescript, Material UI, and integrated with youtube api v3",
+      "This is a youtube clone built with React, Typescript, Material UI, and integrated with youtube api v3",
   },
   {
     link: "https://universe-dawn.com",
     isChecked: true,
     description:
-      "This is a landing page built with react, typescript, SASS, Arwes Framework and storybook",
+      "This is a landing page built with React, Typescript, SASS, Arwes Framework and Storybook",
   },
   {
     link: "https://me-safty.github.io/personal-portfolio",
     isChecked: true,
-    description: "fully responsive personal portfolio built with html, css, js",
+    description:
+      "fully responsive personal portfolio built with HTML, CSS, Javascript",
+  },
+  {
+    link: "https://me-safty.github.io/bootstrap-temp-1",
+    isChecked: true,
+    description:
+      "fully responsive landing page built with HTML, CSS, Bootstrap 5",
   },
 ] as PortfolioLink[]
 
