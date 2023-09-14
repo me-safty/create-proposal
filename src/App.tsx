@@ -30,6 +30,7 @@ function App() {
   const [timeItTake, setTimeItTake] = useState<boolean>(true)
   const [isDiscount, setDiscount] = useState<boolean>(true)
   const [isTestTask, setIsTestTask] = useState<boolean>(true)
+  const [isGithub, setGithub] = useState<boolean>(true)
 
   return (
     <main className="m-2 max-w-3xl">
@@ -94,7 +95,7 @@ function App() {
         ></textarea>
       </section>
       <CheckBox isChecked={isTestTask} setChecked={setIsTestTask}>
-        {testTask}
+        <p>{testTask}</p>
       </CheckBox>
       <CheckBox isChecked={timeItTake} setChecked={setTimeItTake}>
         <p>{long}</p>
@@ -103,7 +104,9 @@ function App() {
         <p>{respon}</p>
       </CheckBox>
       <Projects links={links} setLinks={setLinks} />
-      {github}
+      <CheckBox isChecked={isGithub} setChecked={setGithub}>
+        <p>{github}</p>
+      </CheckBox>
       <textarea
         rows={5}
         value={brief}
@@ -112,7 +115,7 @@ function App() {
       ></textarea>
       <Reviews reviews={reviews} setReviews={setReviews} />
       <CheckBox isChecked={isDiscount} setChecked={setDiscount}>
-        {discount}
+        <p>{discount}</p>
       </CheckBox>
       <textarea
         rows={5}
@@ -126,6 +129,7 @@ function App() {
         testTask={isTestTask ? testTask : ""}
         timeItTake={timeItTake ? long : ""}
         responsive={responsive ? respon : ""}
+        github={isGithub ? github : ""}
         projects={links}
         whoAmI={brief}
         reviews={reviews}

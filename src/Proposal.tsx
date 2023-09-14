@@ -1,10 +1,11 @@
 import { Fragment } from "react"
-import { ClientReview, PortfolioLink, github } from "./content"
+import { ClientReview, PortfolioLink } from "./content"
 
 export default function Proposal({
   name,
   intro,
   testTask,
+  github,
   responsive,
   timeItTake,
   projects,
@@ -16,6 +17,7 @@ export default function Proposal({
   name: string
   intro: string
   testTask: string
+  github: string
   responsive: string
   timeItTake: string
   projects: PortfolioLink[]

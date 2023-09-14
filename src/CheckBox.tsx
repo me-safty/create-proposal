@@ -19,7 +19,7 @@ export default function CheckBox({
         checked={isChecked}
         onChange={() => setChecked((p) => !p)}
       />
-      <section>{children}</section>
+      <section onClick={() => setChecked((p) => !p)}>{children}</section>
     </section>
   )
 }
