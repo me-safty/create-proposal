@@ -4,20 +4,24 @@ import { ClientReview, PortfolioLink, github } from "./content"
 export default function Proposal({
   name,
   intro,
+  testTask,
   responsive,
   timeItTake,
   projects,
   whoAmI,
   reviews,
+  discount,
   end,
 }: {
   name: string
   intro: string
+  testTask: string
   responsive: string
   timeItTake: string
   projects: PortfolioLink[]
   whoAmI: string
   reviews: ClientReview[]
+  discount: string
   end: string
 }) {
   return (
@@ -26,15 +30,13 @@ export default function Proposal({
       <section className="p-2 border border-black rounded-md my-2">
         <p className="">Hi {name},</p>
         <p>{intro}</p>
-        <p>
-          I am willing to provide a free, 2-3 hour test task for you to assess
-          my abilities before making a hiring decision.
-        </p>
+        <p>{testTask}</p>
         <p>{timeItTake}</p>
         {responsive}
         <br />
-        You can see my previous work samples in my portfolio, and here are my
-        projects links:
+        {projects.filter((p) => p.isChecked).length > 0
+          ? "You can see my previous work samples in my portfolio, and here are my projects links:"
+          : ""}
         <br />
         {projects
           .filter((p) => p.isChecked)
@@ -46,7 +48,9 @@ export default function Proposal({
           ))}
         <p>{github}</p>
         <p>{whoAmI}</p>
-        Here is what my clients are saying about me:
+        {reviews.filter((p) => p.isChecked).length > 0
+          ? "Here is what my clients are saying about me:"
+          : ""}
         <br />
         {reviews
           .filter((p) => p.isChecked)
@@ -57,6 +61,7 @@ export default function Proposal({
             </Fragment>
           ))}
         <br />
+        <p>{discount}</p>
         <p>{end}</p>
       </section>
     </article>

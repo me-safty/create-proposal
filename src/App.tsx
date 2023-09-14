@@ -6,12 +6,14 @@ import {
   ClientReview,
   PortfolioLink,
   clientReviews,
+  discount,
   ending,
   github,
   intro,
   long,
   portfolioLinks,
   respon,
+  testTask,
   whoAmI,
 } from "./content"
 import Proposal from "./Proposal"
@@ -26,6 +28,8 @@ function App() {
   const [reviews, setReviews] = useState<ClientReview[]>(clientReviews)
   const [responsive, setIrresponsive] = useState<boolean>(true)
   const [timeItTake, setTimeItTake] = useState<boolean>(true)
+  const [isDiscount, setDiscount] = useState<boolean>(true)
+  const [isTestTask, setIsTestTask] = useState<boolean>(true)
 
   return (
     <main className="m-2 max-w-3xl">
@@ -89,10 +93,9 @@ function App() {
           rows={10}
         ></textarea>
       </section>
-      <p>
-        I am willing to provide a free, 2-3 hour test task for you to assess my
-        abilities before making a hiring decision.
-      </p>
+      <CheckBox isChecked={isTestTask} setChecked={setIsTestTask}>
+        {testTask}
+      </CheckBox>
       <CheckBox isChecked={timeItTake} setChecked={setTimeItTake}>
         <p>{long}</p>
       </CheckBox>
@@ -108,6 +111,9 @@ function App() {
         className="p-1 rounded-md border border-black block my-2 w-full"
       ></textarea>
       <Reviews reviews={reviews} setReviews={setReviews} />
+      <CheckBox isChecked={isDiscount} setChecked={setDiscount}>
+        {discount}
+      </CheckBox>
       <textarea
         rows={5}
         value={end}
@@ -117,11 +123,13 @@ function App() {
       <Proposal
         name={name}
         intro={description}
+        testTask={isTestTask ? testTask : ""}
         timeItTake={timeItTake ? long : ""}
         responsive={responsive ? respon : ""}
         projects={links}
         whoAmI={brief}
         reviews={reviews}
+        discount={isDiscount ? discount : ""}
         end={end}
       />
     </main>

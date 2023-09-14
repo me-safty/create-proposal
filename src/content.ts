@@ -74,3 +74,9 @@ export const respon = `I'll provide you with a completely responsive website fro
 screen size down to 320px "the smallest screen width".`
 
 export const long = "I can complete it in no longer than five days or earlier."
+
+export const discount =
+  "I accept a low price because this is the first time I have worked with you, where I strive to obtain a good review and provide the best possible service to the Client at the lowest possible cost."
+
+export const testTask =
+  "I am willing to provide a free, 2-3 hour test task for you to assess my abilities before making a hiring decision."
